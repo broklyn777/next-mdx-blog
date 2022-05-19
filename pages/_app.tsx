@@ -8,9 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     
     <div className="container">
-      <Head>
-        <title>funnyPlay</title>
-      </Head>
+    
       {/* <nav>
         <Link href="/">/hem</Link>
       </nav> */}

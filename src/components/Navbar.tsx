@@ -6,16 +6,15 @@ const Navbar = () => {
   return (
     <div>
  
-        {/* <Link href="/">/hem</Link> */}
-       <Link href='/blog'>
-            <a>
-              Blog
-            </a>
+        <Link href="/">/hem</Link>
+       <Link href='/om-oss'>
+      
+Om oss        
           </Link>
            <Link href='/kontakt'>
-            <a>
+       
               Kontakt
-            </a>
+           
           </Link>
 
     </div>
