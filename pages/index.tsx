@@ -6,7 +6,7 @@ export default function Home( { posts} : {posts: PostMeta[]} ) {
   return (
     <>
  
-      <h1>Artiklar</h1>
+      <h1>roliglek</h1>
       <Articles posts={posts} />
   
     </>
