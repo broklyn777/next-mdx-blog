@@ -4,6 +4,9 @@
   color: brown;
 }
 
+.ul{
+  display: grid;
+}
 .list {
   margin: 0;
   padding: 0;
@@ -13,11 +16,25 @@
 .list li {
   margin-bottom: 2rem;
 }
-
+.a {
+  color: #ecb365;
+  text-decoration: none;
+}
 .title {
   font-size: 1.25rem;
 }
+.writer
+{
+  font-size: 14px;
+ 
+}
+.writer a:after {
+  content: " . ";
+}
 
+.writer a:last-child:after {
+  content: "";
+}
 .tags {
   font-size: 0.75rem;
 }

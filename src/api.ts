@@ -2,6 +2,9 @@ import path from "path";
 import fs from "fs";
 import { sync } from "glob";
 import matter from "gray-matter";
+import { ImgHTMLAttributes } from "react";
+import Image from "next/image";
+
 
 const POSTS_PATH = path.join(process.cwd(), "posts");
 
@@ -38,11 +41,13 @@ interface Post {
 }
 export interface PostMeta {
   excerpt: string;
+
   slug: string;
   title: string;
   tags: string[];
   date: string;
   writer: string;
+  // images: object;
 }
 export const getPostFromSlug = (slug: string ): Post => {
 const postPath = path.join(POSTS_PATH, `${slug}.mdx`);
@@ -54,6 +59,7 @@ const { content, data } = matter(source);
     meta: {
       slug,
       excerpt: data.excerpt ?? "",
+    //  images: data.images,
      
       title: data.title ?? slug,
       tags: (data.tags ?? []).sort(),

@@ -6,7 +6,21 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: white;
   background: #323334;
+ 
   font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+
+}
+p{
+  color: aqua;
+  /* max-width: 250px ; */
 }
 
 a {
@@ -14,15 +28,8 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
-}
+
 
 nav {
   padding-bottom: 2rem;

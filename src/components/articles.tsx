@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { PostMeta } from "@/src/api";
 import styles from "@/styles/Articles.module.css";
+import Image from "next/image";
 
 export default function Articles({ posts }: { posts: PostMeta[] }) {
   return (
@@ -11,6 +12,11 @@ export default function Articles({ posts }: { posts: PostMeta[] }) {
             <Link href={`/posts/${post.slug}`}>{post.title}</Link>
           </div>
           <p>{post.excerpt}</p>
+
+
+      
+           
+          <p className={styles.writer}>{post.writer}</p>
           <p className={styles.tags}>
             {post.tags.map((tag) => (
               <Link key={tag} href={`/tags/${tag}`}>
@@ -18,6 +24,7 @@ export default function Articles({ posts }: { posts: PostMeta[] }) {
               </Link>
             ))}
           </p>
+        
         </li>
       ))}
     </ul>
