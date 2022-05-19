@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.youtube.com
+Host: undefined
 
 # Sitemaps
-Sitemap: https://www.youtube.com/sitemap.xml
+Sitemap: undefined/sitemap.xml
